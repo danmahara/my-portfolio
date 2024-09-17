@@ -46,23 +46,33 @@
 </head>
 
 <body class="bg-gray-50">
-    <nav class="bg-gray-800 text-white p-5 flex flex-col sm:flex-row justify-between items-center relative">
-        <div class="text-lg font-bold flex justify-between w-full sm:w-auto">
-            <div class="text-lg font-bold"> <a href="/">Dan Mahara</a></div>
+
+    <nav
+        class="bg-gradient-to-r from-purple-500 to-blue-500 text-white p-4 flex flex-col sm:flex-row justify-between items-center relative">
+        <div class="text-lg font-bold flex justify-between items-center w-full sm:w-auto">
+            <div class="flex items-center justify-start w-full sm:w-auto">
+                <img src="./images/d2.jpg" alt="Dan's image"
+                    class="w-12 h-12 sm:w-16 sm:h-16  rounded-full object-cover">
+                <div class="text-lg font-bold ml-4">
+                    <a href="/" class="hover:text-blue-300">Dan Mahara</a>
+                </div>
+            </div>
             <button id="menu-button" class="block sm:hidden px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
 
-        <div id="menu" class="w-full grid grid-cols-2 sm:w-auto hidden sm:flex flex-col sm:flex-row mt-4 sm:mt-0">
+        <div id="menu" class="w-full sm:w-auto hidden sm:flex flex-col sm:flex-row mt-4 sm:mt-0">
             <a href="/" class="hover:text-blue-300 px-4 py-2"><i class="fas fa-home mr-2"></i> Home</a>
-            <a href="#about" class="hover:text-blue-300 px-4 py-2"> <i class="fas fa-user mr-2"></i> About</a>
+            <a href="#about" class="hover:text-blue-300 px-4 py-2"><i class="fas fa-user mr-2"></i> About</a>
             <a href="#skills" class="hover:text-blue-300 px-4 py-2"><i class="fas fa-lightbulb mr-2"></i> Skills</a>
             <a href="#projects" class="hover:text-blue-300 px-4 py-2"><i class="fas fa-briefcase mr-2"></i> Projects</a>
             <a href="#resume" class="hover:text-blue-300 px-4 py-2"><i class="fas fa-file-alt mr-2"></i> Resume</a>
             <a href="#contact" class="hover:text-blue-300 px-4 py-2"><i class="fas fa-envelope mr-2"></i> Contact</a>
         </div>
     </nav>
+
+
 
 
 
