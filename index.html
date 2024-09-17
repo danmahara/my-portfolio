@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Dan Mahara's Portfolio</title>
+
+    <style>
+        @keyframes fade-in-slide-up {
+            from {
+                opacity: 0;
+                transform: translateY(5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-slide-up {
+            animation: fade-in-slide-up 1s ease-out;
+        }
+
+        /* For the home section */
+        #home {
+            background: linear-gradient(to bottom, #1e3a8a 0%, #2563eb 50%, #319795 100%);
+        }
+
+        /* For the about section */
+        #about {
+            background: linear-gradient(to bottom, #319795 0%, #2c7a7b 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <nav class="bg-gray-800 text-white p-5 flex flex-col sm:flex-row justify-between items-center relative">
+        <div class="text-lg font-bold flex justify-between w-full sm:w-auto">
+            <div class="text-lg font-bold"> <a href="/">Dan Mahara</a></div>
+            <button id="menu-button" class="block sm:hidden px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="menu" class="w-full sm:w-auto hidden sm:flex flex-col sm:flex-row mt-4 sm:mt-0">
+            <a href="/" class="hover:text-blue-300 px-4 py-2"><i class="fas fa-home mr-2"></i> Home</a>
+            <a href="#about" class="hover:text-blue-300 px-4 py-2"> <i class="fas fa-user mr-2"></i> About</a>
+            <a href="#skills" class="hover:text-blue-300 px-4 py-2"><i class="fas fa-lightbulb mr-2"></i> Skills</a>
+            <a href="#projects" class="hover:text-blue-300 px-4 py-2"><i class="fas fa-briefcase mr-2"></i> Projects</a>
+            <a href="#resume" class="hover:text-blue-300 px-4 py-2"><i class="fas fa-file-alt mr-2"></i> Resume</a>
+            <a href="#contact" class="hover:text-blue-300 px-4 py-2"><i class="fas fa-envelope mr-2"></i> Contact</a>
+        </div>
+    </nav>
+
+
+
+    <section id="home"
+        class="text-center py-20 bg-gradient-to-r from-blue-800 to-blue-500 text-white animate-fade-in-slide-up">
+        <h1 class="text-3xl sm:text-4xl font-bold mb-2">Hi, I'm Dan Mahara</h1>
+        <p class="text-sm sm:text-base">
+            I specialize in crafting modern, responsive portfolios that blend creativity, design, and technical skill.
+            Using my full-stack expertise, I build dynamic, user-friendly websites for individuals and businesses.
+        </p>
+    </section>
+
+    <section id="about" class="py-20 bg-gradient-to-r from-teal-500 to-teal-700 text-white animate-fade-in-slide-up">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">What I Do</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div
+                    class="bg-white text-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 animate-fade-in-slide-up">
+                    <div class="p-6 text-center">
+                        <i class="fas fa-laptop-code text-teal-500 text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Full-Stack Development</h3>
+                        <p class="text-sm">Building dynamic, responsive websites with both front-end and back-end
+                            technologies.</p>
+                    </div>
+                </div>
+                <!-- Service Card 2 -->
+                <div
+                    class="bg-white text-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 animate-fade-in-slide-up">
+                    <div class="p-6 text-center">
+                        <i class="fas fa-database text-teal-500 text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Database Management</h3>
+                        <p class="text-sm">Designing and managing databases to ensure efficient data storage and
+                            retrieval.</p>
+                    </div>
+                </div>
+                <!-- Service Card 3 -->
+                <div
+                    class="bg-white text-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 animate-fade-in-slide-up">
+                    <div class="p-6 text-center">
+                        <i class="fas fa-mobile-alt text-teal-500 text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Mobile-Friendly Designs</h3>
+                        <p class="text-sm">Creating responsive designs that provide a great user experience on mobile
+                            devices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-green-50 text-gray-700">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center">Skills</h2>
+            <p class="text-sm sm:text-base text-center mb-8">My technical and soft skills set.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Hard Skills</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="border border-sky-300 rounded-full py-2 px-4 text-center text-sm sm:text-base">PHP
+                        </div>
+                        <div class="border border-sky-300 rounded-full py-2 px-4 text-center text-sm sm:text-base">
+                            Laravel</div>
+                        <div class="border border-sky-300 rounded-full py-2 px-4 text-center text-sm sm:text-base">Java
+                        </div>
+                        <div class="border border-sky-300 rounded-full py-2 px-4 text-center text-sm sm:text-base">C
+                        </div>
+                        <div class="border border-sky-300 rounded-full py-2 px-4 text-center text-sm sm:text-base">C#
+                        </div>
+                        <div class="border border-sky-300 rounded-full py-2 px-4 text-center text-sm sm:text-base">
+                            Python</div>
+                        <div class="border border-sky-300 rounded-full py-2 px-4 text-center text-sm sm:text-base">MySQL
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Soft Skills</h3>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="border border-sky-300 rounded-full py-2 px-4 text-center text-sm sm:text-base">
+                            Teamwork and Collaboration</div>
+                        <div class="border border-sky-300 rounded-full py-2 px-4 text-center text-sm sm:text-base">
+                            Effective Communication</div>
+                        <div class="border border-sky-300 rounded-full py-2 px-4 text-center text-sm sm:text-base">Time
+                            Management and Organization</div>
+                        <div class="border border-sky-300 rounded-full py-2 px-4 text-center text-sm sm:text-base">
+                            Problem-Solving and Critical Thinking</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Project Section -->
+    <section id="projects" class="py-20 bg-gray-100 text-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-indigo-600">Projects</h2>
+            <!-- Project List -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card -->
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-xl">
+                    <div class="relative">
+                        <img src="./projectImages/socialInvestment.png" alt="Social Investment Platform"
+                            class="w-full h-40 object-contain cursor-pointer"
+                            onclick="openModal('./projectImages/socialInvestment.png', 'Social Investment Platform (Hackathon Project)')" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent opacity-50"></div>
+                    </div>
+                    <div class="p-6 relative z-10">
+                        <h3 class="text-xl font-semibold mb-2 text-indigo-600">Social Investment Platform (Hackathon
+                            Project)</h3>
+                        <p class="text-sm text-gray-600 mb-4"><strong>Technologies Used:</strong> Laravel, Tailwind CSS,
+                            JavaScript</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 space-y-2 ">
+                            <li>Developed a dynamic investment web application allowing project managers and investors
+                                to manage projects.</li>
+                            <li>Implemented CRUD operations with unique features focused on security.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project Card -->
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-xl">
+                    <div class="relative">
+                        <img src="./projectImages/joke-platform.png" alt="Joke Sharing Platform"
+                            class="w-full h-40 object-contain cursor-pointer"
+                            onclick="openModal('./projectImages/joke-platform.png', 'Joke Sharing Platform')" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent opacity-50"></div>
+                    </div>
+                    <div class="p-6 relative z-10">
+                        <h3 class="text-xl font-semibold mb-2 text-indigo-600">Joke Sharing Platform</h3>
+                        <p class="text-sm text-gray-600 mb-4"><strong>Technologies Used:</strong> Laravel, HTML, CSS,
+                            JavaScript</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 space-y-2">
+                            <li>Developed a dynamic platform allowing users to post, edit, and delete jokes.</li>
+                            <li>Implemented user authentication, post CRUD operations, and responsive design for mobile
+                                devices.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project Card -->
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-xl">
+                    <div class="relative">
+                        <img src="./projectImages/ecommerce.png" alt="E-commerce System"
+                            class="w-full h-40 object-contain cursor-pointer"
+                            onclick="openModal('./projectImages/ecommerce.png', 'E-commerce System')" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent opacity-50"></div>
+                    </div>
+                    <div class="p-6 relative z-10">
+                        <h3 class="text-xl font-semibold mb-2 text-indigo-600">E-commerce System</h3>
+                        <p class="text-sm text-gray-600 mb-4"><strong>Technologies Used:</strong> PHP, HTML, CSS,
+                            JavaScript</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 space-y-2">
+                            <li>Developed a dynamic e-commerce platform enabling buyers to browse products, add items to
+                                their cart, and place orders.</li>
+                            <li>Implemented a seller interface allowing users to upload products with detailed
+                                descriptions and images.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Resume Section -->
+    <section id="resume" class="py-20 bg-gray-200 text-gray-800">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-indigo-600">Resume</h2>
+            <p class="text-center mb-8">Download my resume to learn more about my professional background and
+                experience.</p>
+            <div class="text-center">
+                <a href="./cv_dan.pdf" download
+                    class="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300">
+                    <i class="fas fa-download mr-2"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row md:justify-between">
+                <div class="text-center md:text-left mb-8 md:mb-0">
+                    <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+                    <p class="mb-4">Email: dan.mahara.0909@gmail.com</p>
+                    <p>Phone: 9866520039</p>
+                </div>
+                <div class="flex justify-center md:justify-start space-x-6">
+                    <a href="https://github.com/danmahara/" target="_blank"
+                        class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dan-mahara-1a2846280/" target="_blank"
+                        class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <p class="text-gray-400 text-sm">&copy; 2024 Dan Mahara. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function () {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
